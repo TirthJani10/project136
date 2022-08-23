@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+body{
+    background-position: center;
+    background-size: cover;
+    background: #00c6ff;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.header{
+    width: 100%;
+    margin: 0px;
+    font-size: large;
+    line-height: 2;
+    font-family: 'Silkscreen', cursive;
+    font-size: 25px;
+    background: #00bf8f;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #001510, #00bf8f);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #001510, #00bf8f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+h1{
+    overflow: hidden;
+    white-space: nowrap;
+    animation: animate 7s infinite steps(17) alternate;
+}
+@keyframes animate {
+    from {
+        width:0;
+    }
+    to {
+        width:950px;
+    }
+}
+
+
+
+.info {
+    width: 100%;
+    margin: 0px;
+    font-size: large;
+    line-height: 2;
+    font-family: 'Silkscreen', cursive;
+    font-size: 17px;
+    text-decoration: none;
+    transition: 0.5s all;
+}
+.info:hover{
+    color:yellow;
+    text-decoration: underline;
+}
+
+canvas{
+    margin-top: 300px;
+    /* border: 2px solid white; */
+    box-shadow: 0px 0px 20px black;
+    border-radius: 10px;
+	animation-name: border-color;
+	animation-iteration-count: infinite;
+	animation-duration: 10s;
+    background:pink;
+}
+@keyframes border-color {
+	from {box-shadow:0px 0px 10px red;}
+	to {box-shadow:0px 0px 10px yellow;}
+}
+p{
+    color: black;
+    margin-bottom: 0px;
+    font-size: small;
+}
+#start_button_id {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    width:15%;
+    transition: all 0.3s ease;
+
+}
+#status{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 17px;
+    width:15%;
+    transition: all 0.3s ease;
+}
+#start_button_id:hover {
+    font-size: 30px;
+    color:yellow;
+    text-decoration:underline;
+}
+#status:hover{
+    font-size: 19px;
+    color:yellow;
+    text-decoration:underline;
+}
+
+.wrapper{
+    margin-top:50px;
+    width: 450px;
+    background:#fff;
+    padding:30px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+.wrapper .input-data{
+    height: 40px;
+    width: 100%;
+    position: relative;
+}
+.wrapper .input-data input {
+    height: 100%;
+    width :100%;
+    border:none;
+    font-size: 17px;
+    border-bottom: 2px solid silver;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+.input-data input:focus ~ label {
+    transform: translateY(-27px);
+}
+.wrapper .input-data label {
+    position: absolute;
+    bottom: 10px;
+    left:0;
+    color:grey;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
